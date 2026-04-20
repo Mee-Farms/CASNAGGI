@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
-import { motion } from "framer-motion";
 import {
   ArrowUpRight,
   HeartHandshake,
@@ -11,10 +10,11 @@ import {
   Sprout,
   Shield,
   Star,
+  Briefcase,
 } from "lucide-react";
 import Reveal from "../components/Reveal";
+import HeroCarousel from "../components/HeroCarousel";
 import {
-  ORG,
   MEDIA,
   CORE_VALUES,
   PROGRAMS,
@@ -26,7 +26,8 @@ const programIcons = {
   "humanitarian-care": HeartHandshake,
   "youth-empowerment": GraduationCap,
   "women-empowerment": Users,
-  governance: Scale,
+  "good-governance": Scale,
+  "public-service": Briefcase,
   peacebuilding: Shield,
   "community-development": Sprout,
 };
@@ -34,79 +35,7 @@ const programIcons = {
 const Home = () => {
   return (
     <>
-      {/* ------------ HERO ------------ */}
-      <section
-        className="relative min-h-[92vh] flex items-end overflow-hidden bg-brand-ink"
-        data-testid="home-hero"
-      >
-        <img
-          src={MEDIA.heroHome}
-          alt="Community of Nigerian women"
-          className="absolute inset-0 w-full h-full object-cover opacity-80"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-ink via-brand-ink/50 to-brand-ink/10" />
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-ink/60 via-transparent to-transparent" />
-
-        <div className="container-x relative z-10 pt-40 pb-20 text-white w-full">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="overline text-brand-clay"
-          >
-            CASNAGGI · Est. {ORG.founded}
-          </motion.p>
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="display-xl mt-6 text-[13vw] md:text-[9vw] lg:text-[7.2vw] max-w-6xl"
-          >
-            Compassion meets
-            <br />
-            <span className="italic font-light text-brand-clay">
-              Governance.
-            </span>
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-8 max-w-xl text-lg md:text-xl text-white/80 leading-relaxed"
-          >
-            Care Support for the Needy and Good Governance Initiative.
-            Empowering vulnerable communities and championing accountable
-            leadership for a fair, inclusive, and sustainable Nigeria.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.55 }}
-            className="mt-10 flex flex-wrap gap-4"
-          >
-            <Link
-              to="/impact"
-              className="btn-primary"
-              data-testid="hero-impact-btn"
-            >
-              Our Impact <ArrowUpRight className="h-4 w-4" />
-            </Link>
-            <Link
-              to="/donate"
-              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-white/30 text-white font-medium hover:bg-white hover:text-brand-ink transition-all duration-300"
-              data-testid="hero-donate-btn"
-            >
-              Donate Now <ArrowUpRight className="h-4 w-4" />
-            </Link>
-          </motion.div>
-
-          <div className="mt-20 flex items-center gap-6 text-xs uppercase tracking-[0.22em] text-white/60">
-            <span>Bayelsa · Imo · National</span>
-            <div className="h-px flex-1 bg-white/20 max-w-40" />
-            <span>Founded 2025</span>
-          </div>
-        </div>
-      </section>
+      <HeroCarousel />
 
       {/* ------------ VALUES MARQUEE ------------ */}
       <section

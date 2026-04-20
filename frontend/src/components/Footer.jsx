@@ -105,6 +105,24 @@ const Footer = () => {
                   {ORG.email}
                 </a>
               </li>
+              <li className="flex items-start gap-3">
+                <ArrowUpRight className="h-4 w-4 mt-1 text-brand-terracotta" />
+                <a
+                  href={`https://${ORG.website}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white break-all"
+                  data-testid="footer-website"
+                >
+                  {ORG.website}
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-1 text-[10px] uppercase tracking-[0.22em] text-brand-terracotta">
+                  CAC
+                </span>
+                <span className="text-white/80 font-mono text-sm">{ORG.rc}</span>
+              </li>
             </ul>
 
             <div className="mt-8 flex flex-wrap gap-3">

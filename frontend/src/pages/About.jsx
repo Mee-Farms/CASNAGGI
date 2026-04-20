@@ -11,9 +11,31 @@ const About = () => {
       <PageHeader
         eyebrow="About CASNAGGI"
         title="A Nigerian NGO where compassion meets accountability."
-        lede={`${ORG.name} is a registered non-governmental, non-profit organization founded in ${ORG.founded}. We advance human welfare while championing transparency, accountability, and good governance across Nigeria.`}
+        lede={`${ORG.name} is a registered non-governmental, non-profit organization founded on ${ORG.founded}. We advance human welfare while championing transparency, accountability, and good governance across Nigeria.`}
         breadcrumbs={[{ label: "About" }]}
       />
+
+      {/* Registration credentials strip */}
+      <section className="bg-brand-sand/60 border-b border-brand-rule" data-testid="about-registration">
+        <div className="container-x py-6 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+          <div>
+            <div className="overline text-brand-mute">Registrar</div>
+            <div className="mt-1 font-display text-base text-brand-ink">{ORG.registrar}</div>
+          </div>
+          <div>
+            <div className="overline text-brand-mute">RC Number</div>
+            <div className="mt-1 font-display text-base text-brand-ink">{ORG.rc}</div>
+          </div>
+          <div>
+            <div className="overline text-brand-mute">Registered</div>
+            <div className="mt-1 font-display text-base text-brand-ink">{ORG.founded}</div>
+          </div>
+          <div>
+            <div className="overline text-brand-mute">Head Office</div>
+            <div className="mt-1 font-display text-base text-brand-ink">Bayelsa, Nigeria</div>
+          </div>
+        </div>
+      </section>
 
       {/* Mission / Vision split */}
       <section className="py-20 md:py-28" data-testid="about-mission-vision">
@@ -102,7 +124,7 @@ const About = () => {
       {/* Code of Ethics */}
       <section className="py-24 md:py-32" data-testid="about-ethics">
         <div className="container-x grid md:grid-cols-12 gap-10">
-          <div className="md:col-span-5">
+          <div className="md:col-span-5 md:sticky md:top-28 md:self-start">
             <p className="overline">Principal Code</p>
             <h2 className="display-xl mt-4 text-4xl md:text-5xl">
               Our Code of Ethics.
@@ -117,18 +139,23 @@ const About = () => {
             <ul className="divide-y divide-brand-rule">
               {ETHICS.map((e, i) => (
                 <li
-                  key={e}
-                  className="flex items-center justify-between py-5 group"
+                  key={e.title}
+                  className="py-6 group"
+                  data-testid={`ethic-${i}`}
                 >
-                  <div className="flex items-center gap-6">
-                    <span className="font-mono text-sm text-brand-mute">
+                  <div className="flex items-start gap-6">
+                    <span className="font-mono text-sm text-brand-mute pt-1">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <span className="font-display text-xl md:text-2xl group-hover:text-brand-terracotta transition">
-                      {e}
-                    </span>
+                    <div className="flex-1">
+                      <h3 className="font-display text-xl md:text-2xl group-hover:text-brand-terracotta transition">
+                        {e.title}
+                      </h3>
+                      <p className="mt-2 text-brand-ink/70 text-sm leading-relaxed">
+                        {e.body}
+                      </p>
+                    </div>
                   </div>
-                  <ArrowUpRight className="h-5 w-5 text-brand-mute group-hover:text-brand-terracotta transition" />
                 </li>
               ))}
             </ul>
@@ -136,41 +163,82 @@ const About = () => {
         </div>
       </section>
 
-      {/* Trustees */}
+      {/* Board of Directors / Trustees — expanded */}
       <section
         className="py-24 md:py-32 bg-brand-ink text-white"
         data-testid="about-trustees"
       >
         <div className="container-x">
-          <div className="max-w-3xl">
-            <p className="overline text-brand-clay">Board of Trustees</p>
-            <h2 className="display-xl mt-4 text-4xl md:text-5xl lg:text-6xl text-white">
-              The people behind the mission.
-            </h2>
+          <div className="grid md:grid-cols-12 gap-8 items-end mb-16">
+            <div className="md:col-span-8">
+              <p className="overline text-brand-clay">Board of Directors & Trustees</p>
+              <h2 className="display-xl mt-4 text-4xl md:text-5xl lg:text-6xl text-white">
+                The people behind the mission.
+              </h2>
+              <p className="mt-6 text-white/70 max-w-xl leading-relaxed">
+                CASNAGGI is governed by a Board of Trustees responsible for
+                strategic oversight, accountability and compliance with statutory
+                regulations.
+              </p>
+            </div>
+            <div className="md:col-span-4 md:text-right text-xs uppercase tracking-[0.22em] text-white/50">
+              5 Directors · 3 States · 2 Continents
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-16">
-            {TRUSTEES.map((t, i) => (
+          {/* First row: CEO + Chairman large cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+            {TRUSTEES.slice(0, 2).map((t, i) => (
               <Reveal key={t.name} delay={i * 0.1}>
                 <div
-                  className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-brand-forest"
+                  className="bg-white/5 rounded-2xl overflow-hidden border border-white/10 group"
                   data-testid={`trustee-${i}`}
                 >
-                  <img
-                    src={t.photo}
-                    alt={t.name}
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-ink via-brand-ink/10 to-transparent" />
+                  <div className="grid grid-cols-5">
+                    <div className="col-span-2 relative aspect-square md:aspect-auto bg-brand-forest">
+                      <img
+                        src={t.photo}
+                        alt={t.name}
+                        className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700"
+                      />
+                    </div>
+                    <div className="col-span-3 p-8 flex flex-col justify-center">
+                      <div className="overline text-brand-terracotta">{t.role}</div>
+                      <h3 className="font-display text-xl md:text-2xl mt-2 font-medium leading-snug">
+                        {t.name}
+                      </h3>
+                      <p className="mt-4 text-white/70 text-sm leading-relaxed line-clamp-6">
+                        {t.bio}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="mt-6">
-                  <div className="overline text-brand-terracotta">{t.role}</div>
-                  <h3 className="font-display text-2xl mt-2 font-medium">
-                    {t.name}
-                  </h3>
-                  <p className="mt-4 text-white/70 text-sm leading-relaxed">
-                    {t.bio}
-                  </p>
+              </Reveal>
+            ))}
+          </div>
+
+          {/* Second row: 3 directors */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mt-10">
+            {TRUSTEES.slice(2).map((t, i) => (
+              <Reveal key={t.name} delay={i * 0.1}>
+                <div data-testid={`trustee-${i + 2}`}>
+                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-brand-forest">
+                    <img
+                      src={t.photo}
+                      alt={t.name}
+                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-ink via-brand-ink/10 to-transparent" />
+                  </div>
+                  <div className="mt-6">
+                    <div className="overline text-brand-terracotta">{t.role}</div>
+                    <h3 className="font-display text-xl md:text-2xl mt-2 font-medium">
+                      {t.name}
+                    </h3>
+                    <p className="mt-3 text-white/70 text-sm leading-relaxed line-clamp-5">
+                      {t.bio}
+                    </p>
+                  </div>
                 </div>
               </Reveal>
             ))}
