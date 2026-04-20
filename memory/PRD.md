@@ -50,12 +50,19 @@ User provided official organization PDF and asked for:
 - [x] **Events nav** added to header (desktop + mobile)
 - [x] 50+ testing agent assertions passed (0 broken of 51 images, 0 console errors, 100% test pass rate)
 
+### Iteration 3 (Strategic Plan + Event Detail Pages) — 20 Apr 2026
+- [x] **Strategic Action Plan 2025–2035** on /impact: 3-phase timeline cards (Foundation / Expansion / Nationwide Scale) with numbered badges, connecting rule line, and 4-goal checklist per phase
+- [x] **Projected 2035** section on /impact: terracotta block with 5 numbered target lines ("50,000+ households reached...") + dual CTA (Fund the roadmap / Partner with us)
+- [x] **Event detail pages** at `/events/:slug`: cinematic hero (image + overlay + category/date/location/tags), sticky stats sidebar, long-form story (3 paragraphs per event), share button (navigator.share + clipboard fallback), tag chips, prev/next navigation (loops through archive, scrolls to top), related events (always 3, same-category-first)
+- [x] Event data enriched with `story` (paragraph array) and `stats` (3 value/label metrics) per event
+- [x] Invalid event slug redirects to /events
+- [x] Testing agent: 100% pass, 0 bugs, 0 broken images, all 9 event slugs validated
+
 ## Prioritized Backlog
 ### P0 – Pre-launch polish
-- Replace 3 placeholder trustee photos (Rev Fr Mbara, Dr Ikoro, Mrs Blessing Okorie — PDF didn't include photos) with real portraits
+- Replace 3 placeholder trustee photos (Rev Fr Mbara, Dr Ikoro, Mrs Blessing Okorie)
 - Replace placeholder social URLs with real handles
-- Confirm bank transfer account details to list under /donate
-- Consider adding Gallery page (link exists on original site)
+- Confirm bank transfer details for /donate
 
 ### P1 – Growth features
 - Wire Contact + Newsletter forms to backend (FastAPI + MongoDB) or form provider
