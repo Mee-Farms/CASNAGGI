@@ -15,7 +15,6 @@ const Events = () => {
   const filtered = filter === "All" ? EVENTS : EVENTS.filter((e) => e.category === filter);
 
   const featured = EVENTS[0];
-  const rest = filtered.filter((e) => e.slug !== featured.slug || filter !== "All");
   const showFeatured = filter === "All";
 
   return (

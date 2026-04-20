@@ -13,6 +13,7 @@ const HeroCarousel = () => {
     duration: 40,
   });
   const [selected, setSelected] = useState(0);
+  const [tick, setTick] = useState(0);
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
@@ -29,11 +30,24 @@ const HeroCarousel = () => {
       clearInterval(id);
       emblaApi.off("select", onSelect);
     };
-  }, [emblaApi, onSelect]);
+  }, [emblaApi, onSelect, tick]);
 
-  const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
-  const scrollNext = () => emblaApi && emblaApi.scrollNext();
-  const scrollTo = (i) => emblaApi && emblaApi.scrollTo(i);
+  const bump = () => setTick((n) => n + 1);
+  const scrollPrev = () => {
+    if (!emblaApi) return;
+    emblaApi.scrollPrev();
+    bump();
+  };
+  const scrollNext = () => {
+    if (!emblaApi) return;
+    emblaApi.scrollNext();
+    bump();
+  };
+  const scrollTo = (i) => {
+    if (!emblaApi) return;
+    emblaApi.scrollTo(i);
+    bump();
+  };
 
   const slide = HERO_SLIDES[selected];
 
