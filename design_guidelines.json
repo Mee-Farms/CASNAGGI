@@ -1,0 +1,290 @@
+{
+  "theme": "light",
+  "archetype": "1 (Organic & Earthy)",
+  "design_philosophy": "A sophisticated, trust-inspiring, and grounded aesthetic that establishes CASNAGGI as a highly credible international NGO. The design balances raw, documentary-style human stories with bold, authoritative typography to convey both compassion and governance. Generous whitespace, asymmetric bento grids, and earth-toned palettes distinguish it from generic templates.",
+  "colors": {
+    "background": "#FCFBF8",
+    "foreground": "#1B241E",
+    "primary": "#E05A47",
+    "primary_foreground": "#FFFFFF",
+    "secondary": "#1A4A38",
+    "secondary_foreground": "#FCFBF8",
+    "muted": "#F2F0E6",
+    "muted_foreground": "#636F67",
+    "accent": "#D6C7B3",
+    "accent_foreground": "#1B241E",
+    "border": "#E5E1D8",
+    "ring": "#E05A47"
+  },
+  "typography": {
+    "fonts": [
+      {
+        "family": "Outfit",
+        "usage": "Headings",
+        "weights": ["300", "400", "500", "600", "700"]
+      },
+      {
+        "family": "Work Sans",
+        "usage": "Body",
+        "weights": ["400", "500", "600"]
+      }
+    ],
+    "h1": "font-outfit text-5xl md:text-6xl lg:text-[4rem] tracking-tight leading-[1.05] font-semibold",
+    "h2": "font-outfit text-4xl md:text-5xl tracking-tight leading-[1.1] font-medium",
+    "h3": "font-outfit text-2xl md:text-3xl tracking-tight leading-[1.2] font-medium",
+    "h4": "font-outfit text-xl md:text-2xl tracking-tight leading-[1.3] font-medium",
+    "body_lg": "font-sans text-lg md:text-xl leading-relaxed text-[#1B241E]/80",
+    "body": "font-sans text-base leading-relaxed text-[#1B241E]/80",
+    "body_sm": "font-sans text-sm leading-relaxed text-[#1B241E]/70",
+    "overline": "font-sans text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-[#E05A47]"
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-20 md:py-24 lg:py-32",
+    "container": "w-full max-w-7xl mx-auto px-6 md:px-8 lg:px-12",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 lg:gap-12",
+    "bento_span_hero": "col-span-1 md:col-span-8 row-span-2",
+    "bento_span_square": "col-span-1 md:col-span-4 row-span-1",
+    "bento_span_tall": "col-span-1 md:col-span-4 row-span-2"
+  },
+  "surfaces_and_components": {
+    "card_tactile": "bg-white rounded-2xl border border-[#E5E1D8] shadow-[0_8px_32px_rgba(0,0,0,0.04)] p-8 md:p-10 transition-all duration-300 hover:shadow-[0_12px_48px_rgba(0,0,0,0.08)] hover:-translate-y-1",
+    "card_solid": "bg-[#F2F0E6] rounded-2xl p-8 md:p-12",
+    "header_glass": "fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#FCFBF8]/80 border-b border-[#E5E1D8]/50 transition-all duration-300",
+    "button_primary": "inline-flex items-center justify-center px-8 py-4 bg-[#E05A47] text-white font-medium rounded-full transition-all duration-300 hover:bg-[#C84836] hover:shadow-lg hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-[#E05A47] focus-visible:ring-offset-2 focus-visible:ring-offset-[#FCFBF8]",
+    "button_secondary": "inline-flex items-center justify-center px-8 py-4 bg-[#1A4A38] text-white font-medium rounded-full transition-all duration-300 hover:bg-[#113125] hover:shadow-lg hover:-translate-y-0.5",
+    "button_outline": "inline-flex items-center justify-center px-8 py-4 bg-transparent border border-[#E5E1D8] text-[#1B241E] font-medium rounded-full transition-all duration-300 hover:bg-[#F2F0E6] hover:border-[#D6C7B3]",
+    "image_overlay_dark": "absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent",
+    "image_radius": "rounded-2xl overflow-hidden"
+  },
+  "media": {
+    "logos": [
+      {
+        "id": "logo_main",
+        "url": "https://caresupportfortheneedy.com/wp-content/uploads/2025/12/Cradling-Love-in-Soft-Colors.png",
+        "description": "CASNAGGI Primary Logo",
+        "category": "branding"
+      }
+    ],
+    "hero": [
+      {
+        "id": "hero_home",
+        "url": "https://images.pexels.com/photos/28702872/pexels-photo-28702872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Group of African women in vibrant clothing outdoors (Hope, Community)",
+        "category": "background"
+      },
+      {
+        "id": "unveiling",
+        "url": "https://caresupportfortheneedy.com/wp-content/uploads/2026/01/iv-edited.png",
+        "description": "CASNAGGI Unveiling Graphic",
+        "category": "about"
+      }
+    ],
+    "programs": [
+      {
+        "id": "humanitarian_care",
+        "url": "https://images.pexels.com/photos/6646875/pexels-photo-6646875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Woman volunteer distributing aid packages",
+        "category": "program_cover"
+      },
+      {
+        "id": "youth_empowerment",
+        "url": "https://images.unsplash.com/photo-1649486116205-71c92cf5160f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwc2Nob29sJTIwc3R1ZGVudHxlbnwwfHx8fDE3NzY2NjQ3NDJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Young African students standing together",
+        "category": "program_cover"
+      },
+      {
+        "id": "women_empowerment",
+        "url": "https://images.pexels.com/photos/36660576/pexels-photo-36660576.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Nigerian women in traditional attire",
+        "category": "program_cover"
+      },
+      {
+        "id": "governance_peacebuilding",
+        "url": "https://images.pexels.com/photos/6565752/pexels-photo-6565752.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Volunteers holding informational booklets, discussing",
+        "category": "program_cover"
+      },
+      {
+        "id": "public_service",
+        "url": "https://images.pexels.com/photos/35744764/pexels-photo-35744764.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Hand planting a sapling, representing growth and public service",
+        "category": "program_cover"
+      }
+    ],
+    "team": [
+      {
+        "id": "founder_ifeoma",
+        "url": "https://caresupportfortheneedy.com/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-11-at-22.21.27_27d8e097-e1765561153698-300x300.jpg",
+        "description": "Founder Ifeoma Okorie",
+        "category": "trustee_portrait"
+      },
+      {
+        "id": "lady_eucharia",
+        "url": "https://caresupportfortheneedy.com/wp-content/uploads/2025/12/Lady-Nganya-300x300.jpg",
+        "description": "Lady Eucharia Nganya",
+        "category": "trustee_portrait"
+      },
+      {
+        "id": "mr_favour",
+        "url": "https://caresupportfortheneedy.com/wp-content/uploads/2025/12/Favour-300x300.jpg",
+        "description": "Mr Favour Iwuchukwu",
+        "category": "trustee_portrait"
+      }
+    ],
+    "impact": [
+      {
+        "id": "success_story_1",
+        "url": "https://images.unsplash.com/photo-1610473068575-4d30e6390b1c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxibGFjayUyMHdvbWFuJTIwd29ya2luZyUyMGxhcHRvcHxlbnwwfHx8fDE3NzY2NjQ3NDJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Woman working on laptop (Empowerment success)",
+        "category": "story_image"
+      },
+      {
+        "id": "volunteer_action",
+        "url": "https://images.unsplash.com/photo-1593113598332-cd288d649433?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwyfHxjaGFyaXR5JTIwdm9sdW50ZWVyc3xlbnwwfHx8fDE3NzY2NjQ3NTB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Volunteer sorting boxes",
+        "category": "get_involved"
+      }
+    ]
+  },
+  "motion_and_interactions": {
+    "scroll_reveal": "Use framer-motion variants (initial={opacity: 0, y: 20}, animate={opacity: 1, y: 0}) for text blocks.",
+    "stagger_children": "Use transition={{ staggerChildren: 0.1 }} on list containers.",
+    "parallax": "Apply subtle y-axis translation on scroll for hero images and large graphic elements.",
+    "marquee": "Use react-fast-marquee for a subtle 'Editorial Ribbon' of core values across the homepage (bg-[#F2F0E6] text-[#1A4A38] uppercase tracking-widest)."
+  },
+  "pages": {
+    "Home": {
+      "path": "/",
+      "sections": [
+        {
+          "name": "Hero",
+          "layout": "Full height (min-h-[80vh] or min-h-screen). Absolute background image (hero_home) with a subtle dark gradient overlay. Content bottom-left aligned.",
+          "content": "Headline: 'Compassion meets Governance.', Subhead: 'Care Support for the Needy and Good Governance Initiative (CASNAGGI). Empowering communities, advocating for justice, and building a sustainable future in Nigeria and beyond.', CTA: 'Our Impact' & 'Donate Now'"
+        },
+        {
+          "name": "Core Values Marquee",
+          "layout": "Full-width ribbon, very slow scroll.",
+          "content": "Compassion • Integrity • Equality • Empowerment • Good Governance • Collaboration"
+        },
+        {
+          "name": "Mission Preview (Bento Grid)",
+          "layout": "Bento Grid (12 cols). A large text block spanning 8 cols expressing the mission. A tall image spanning 4 cols showing 'public_service' sapling image.",
+          "content": "We provide humanitarian care and advocate for good governance."
+        },
+        {
+          "name": "Thematic Areas (Programs Preview)",
+          "layout": "Grid of 3 cards (md:grid-cols-3) using 'card_tactile'. Features: Humanitarian Care, Youth Empowerment, Women Empowerment. Use Phosphor Icons or Heroicons.",
+          "content": "Brief previews with 'Learn More' links."
+        },
+        {
+          "name": "Impact Stats",
+          "layout": "Solid block (bg-[#1A4A38] text-white). 3-4 massive numbers using the Display font.",
+          "content": "Large typography emphasizing lives touched or communities reached."
+        }
+      ]
+    },
+    "About": {
+      "path": "/about",
+      "sections": [
+        {
+          "name": "Header",
+          "layout": "Minimalist solid background with large bold typography. No image.",
+          "content": "About CASNAGGI. Founded August 2025."
+        },
+        {
+          "name": "History & Vision",
+          "layout": "Two-column grid. Left: Sticky heading. Right: Flowing prose.",
+          "content": "Detailed history and our vision for Nigeria."
+        },
+        {
+          "name": "Code of Ethics",
+          "layout": "List with generous spacing. Each item has a subtle border-b.",
+          "content": "Transparency, Accountability, Impartiality."
+        },
+        {
+          "name": "Board of Trustees",
+          "layout": "Grid of profiles. Square images (grayscale or subtle tint), names, and bios.",
+          "content": "Founder Ifeoma Okorie, Lady Eucharia Nganya, Mr Favour Iwuchukwu."
+        }
+      ]
+    },
+    "Programs": {
+      "path": "/programs",
+      "sections": [
+        {
+          "name": "Header",
+          "layout": "Large typographic header.",
+          "content": "Our Thematic Areas."
+        },
+        {
+          "name": "Program Showcase",
+          "layout": "Alternating Left/Right layouts. Large images (from media.programs) next to detailed descriptions.",
+          "content": "Sections for Humanitarian Care, Youth Empowerment, Women Empowerment, Governance, Peacebuilding, Public Service."
+        }
+      ]
+    },
+    "Impact": {
+      "path": "/impact",
+      "sections": [
+        {
+          "name": "Stats Overview",
+          "layout": "Bento grid with distinct solid background colors for each stat.",
+          "content": "2025 Achievements."
+        },
+        {
+          "name": "Success Stories",
+          "layout": "Cards with images (impact.success_story_1) and quotes.",
+          "content": "Real stories from communities."
+        }
+      ]
+    },
+    "Get Involved": {
+      "path": "/get-involved",
+      "sections": [
+        {
+          "name": "Action Grid",
+          "layout": "4 equal columns. High-contrast cards for Volunteer, Fundraise, Donate, Partner.",
+          "content": "Clear CTAs for each action. Use 'volunteer_action' image."
+        }
+      ]
+    },
+    "Donate": {
+      "path": "/donate",
+      "sections": [
+        {
+          "name": "Donate UI",
+          "layout": "Centered narrow card (max-w-2xl). Uses 'card_tactile'.",
+          "content": "Static information on ways to give. Bank details, crypto, or contact info. No payment gateway needed. Large primary button to copy details."
+        }
+      ]
+    },
+    "Contact": {
+      "path": "/contact",
+      "sections": [
+        {
+          "name": "Contact Split",
+          "layout": "2 columns. Left: Information (49 Customs Road, Bayelsa State). Right: Shadcn Form.",
+          "content": "Name, Email, Subject, Message."
+        }
+      ]
+    }
+  },
+  "components_and_libraries": {
+    "icons": "lucide-react (default) or @phosphor-icons/react for high-end duotone icons.",
+    "animations": "framer-motion for page transitions and scroll reveals.",
+    "ui_primitives": "Shadcn UI (Form, Input, Textarea, Button, Card). Must be heavily customized to strip generic borders and use the 'tactile' or 'solid' styling defined in surfaces.",
+    "marquee": "react-fast-marquee for the text ribbon."
+  },
+  "testing": {
+    "attributes": "All interactive elements (buttons, links, form fields) MUST include descriptive data-testid attributes (e.g., data-testid='donate-cta-button', data-testid='nav-about-link')."
+  },
+  "instructions_to_main_agent": [
+    "Install required fonts: Ensure Outfit and Work Sans are imported via Google Fonts.",
+    "Install required packages: framer-motion, react-fast-marquee, @phosphor-icons/react (optional if using lucide).",
+    "Tailwind configuration: Extend tailwind.config.js with the custom colors defined above. Add font families.",
+    "Build the layout shell: Implement the sticky glass header and a dark, massive footer with big typography (e.g., 'Let's Talk' text-[10vw]).",
+    "Routing: Set up React Router for the 7 pages.",
+    "Media rules: Use the exact URLs provided in the media object. NEVER use placeholder images. If an image isn't available, rely on bold typography and solid color blocks.",
+    "Follow 'E1' Anti-AI rules: Do NOT center-align everything. Use left-alignment for long text. Leave generous breathing room (p-12 to p-24). Avoid default Shadcn styles; make the UI feel bespoke."
+  ]
+}
