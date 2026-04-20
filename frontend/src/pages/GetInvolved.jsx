@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight, HandHeart, Users, Megaphone, Building2 } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
 import { MEDIA } from "../data/content";
 
 const WAYS = [
@@ -43,6 +44,11 @@ const WAYS = [
 const GetInvolved = () => {
   return (
     <>
+      <Seo
+        title="Get Involved"
+        description="Volunteer, fundraise, advocate or partner with CASNAGGI. Four ways to stand with Nigerian communities and champion accountable leadership."
+        path="/get-involved"
+      />
       <PageHeader
         eyebrow="Get Involved"
         title="Four ways to move Nigeria forward."

@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Reveal from "../components/Reveal";
 import HeroCarousel from "../components/HeroCarousel";
+import Seo from "../components/Seo";
 import {
   MEDIA,
   CORE_VALUES,
@@ -35,6 +36,11 @@ const programIcons = {
 const Home = () => {
   return (
     <>
+      <Seo
+        title="Compassion meets Governance"
+        description="CASNAGGI — a registered Nigerian NGO empowering vulnerable communities and championing good governance across Nigeria. Real impact: 5,000+ lives reached in 2025."
+        path="/"
+      />
       <HeroCarousel />
 
       {/* ------------ VALUES MARQUEE ------------ */}

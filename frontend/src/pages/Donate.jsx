@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight, Copy, Mail, Phone, Landmark } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
 import { ORG } from "../data/content";
 
 const AMOUNTS = [
@@ -15,6 +16,11 @@ const AMOUNTS = [
 const Donate = () => {
   return (
     <>
+      <Seo
+        title="Donate"
+        description="Support CASNAGGI's humanitarian and governance work in Nigeria. Every gift powers food relief, mobile clinics, skills training, and civic accountability programs."
+        path="/donate"
+      />
       <PageHeader
         eyebrow="Give with intent"
         title="Every gift becomes a community."

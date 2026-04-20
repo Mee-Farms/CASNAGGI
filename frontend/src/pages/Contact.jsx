@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ArrowUpRight, Mail, MapPin, Phone, Check } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
 import { ORG } from "../data/content";
 
 const Contact = () => {
@@ -14,6 +15,11 @@ const Contact = () => {
 
   return (
     <>
+      <Seo
+        title="Contact"
+        description="Reach CASNAGGI at our Bayelsa head office. Email casnaggi@gmail.com or call +234 916 796 1355. Whether you're a donor, partner, journalist or volunteer — we'd love to hear from you."
+        path="/contact"
+      />
       <PageHeader
         eyebrow="Contact"
         title="Let's start a conversation."

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight, Check, Quote, Target } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
 import { IMPACT_STATS, MEDIA, STRATEGIC_PLAN, PROJECTED_2035 } from "../data/content";
 
 const STORIES = [
@@ -55,6 +56,11 @@ const TIMELINE = [
 const Impact = () => {
   return (
     <>
+      <Seo
+        title="Our Impact & 10-Year Roadmap"
+        description="CASNAGGI's 2025 impact: 5,000+ lives touched, 1,200 food packs, 650 medical beneficiaries, 15,000 reached. Plus our Strategic Action Plan 2025–2035 and targets for 2035."
+        path="/impact"
+      />
       <PageHeader
         eyebrow="Our Impact · 2025"
         title="A young movement. Real momentum."

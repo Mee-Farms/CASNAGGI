@@ -9,6 +9,7 @@ import {
   Share2,
 } from "lucide-react";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
 import { EVENTS } from "../data/content";
 
 const EventDetail = () => {

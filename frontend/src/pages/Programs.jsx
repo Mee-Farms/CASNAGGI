@@ -3,11 +3,17 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight, Check } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
 import { PROGRAMS } from "../data/content";
 
 const Programs = () => {
   return (
     <>
+      <Seo
+        title="Programs & Thematic Areas"
+        description="Seven thematic areas from humanitarian care to good governance: Health on Wheels, She Leads, Youth in Governance, Transparency Watch, Clean Water for All, Peace Clubs and more."
+        path="/programs"
+      />
       <PageHeader
         eyebrow="Thematic Areas of Focus"
         title="Programs built for the last mile."

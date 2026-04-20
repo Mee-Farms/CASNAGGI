@@ -3,11 +3,18 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight, Check } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
+import TrusteeCard from "../components/TrusteeCard";
+import Seo from "../components/Seo";
 import { ORG, MEDIA, TRUSTEES, ETHICS, OBJECTIVES } from "../data/content";
 
 const About = () => {
   return (
     <>
+      <Seo
+        title="About CASNAGGI"
+        description="Care Support for the Needy and Good Governance Initiative (CASNAGGI) — a registered Nigerian NGO (RC: 8722526) founded 21 August 2025. Meet the board, mission, vision and code of ethics."
+        path="/about"
+      />
       <PageHeader
         eyebrow="About CASNAGGI"
         title="A Nigerian NGO where compassion meets accountability."
@@ -189,58 +196,19 @@ const About = () => {
           {/* First row: CEO + Chairman large cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
             {TRUSTEES.slice(0, 2).map((t, i) => (
-              <Reveal key={t.name} delay={i * 0.1}>
-                <div
-                  className="bg-white/5 rounded-2xl overflow-hidden border border-white/10 group"
-                  data-testid={`trustee-${i}`}
-                >
-                  <div className="grid grid-cols-5">
-                    <div className="col-span-2 relative aspect-square md:aspect-auto bg-brand-forest">
-                      <img
-                        src={t.photo}
-                        alt={t.name}
-                        className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700"
-                      />
-                    </div>
-                    <div className="col-span-3 p-8 flex flex-col justify-center">
-                      <div className="overline text-brand-terracotta">{t.role}</div>
-                      <h3 className="font-display text-xl md:text-2xl mt-2 font-medium leading-snug">
-                        {t.name}
-                      </h3>
-                      <p className="mt-4 text-white/70 text-sm leading-relaxed line-clamp-6">
-                        {t.bio}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Reveal>
+              <TrusteeCard key={t.name} trustee={t} index={i} variant="hero" />
             ))}
           </div>
 
           {/* Second row: 3 directors */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mt-10">
             {TRUSTEES.slice(2).map((t, i) => (
-              <Reveal key={t.name} delay={i * 0.1}>
-                <div data-testid={`trustee-${i + 2}`}>
-                  <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-brand-forest">
-                    <img
-                      src={t.photo}
-                      alt={t.name}
-                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-brand-ink via-brand-ink/10 to-transparent" />
-                  </div>
-                  <div className="mt-6">
-                    <div className="overline text-brand-terracotta">{t.role}</div>
-                    <h3 className="font-display text-xl md:text-2xl mt-2 font-medium">
-                      {t.name}
-                    </h3>
-                    <p className="mt-3 text-white/70 text-sm leading-relaxed line-clamp-5">
-                      {t.bio}
-                    </p>
-                  </div>
-                </div>
-              </Reveal>
+              <TrusteeCard
+                key={t.name}
+                trustee={t}
+                index={i + 2}
+                variant="small"
+              />
             ))}
           </div>
 

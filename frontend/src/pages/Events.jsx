@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight, Calendar, MapPin } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
 import { EVENTS } from "../data/content";
 
 const Events = () => {
@@ -19,6 +20,11 @@ const Events = () => {
 
   return (
     <>
+      <Seo
+        title="Events & Outreaches"
+        description="Field reports from CASNAGGI's humanitarian outreaches and governance activities — cash gifts, medical outreach, youth forums, public dialogues and more."
+        path="/events"
+      />
       <PageHeader
         eyebrow="Events & Outreaches"
         title="Field reports from the front line."

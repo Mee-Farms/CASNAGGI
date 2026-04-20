@@ -214,31 +214,60 @@ export const TRUSTEES = [
     name: "Comrade Ifeoma Okorie Ikoro",
     role: "Founder / CEO",
     photo: MEDIA.team.ifeoma,
-    bio: "A dynamic leader, humanitarian and advocate for social justice. Renowned for blending compassion with accountability, she has built CASNAGGI into a nationally recognized platform that empowers youth, uplifts women, strengthens institutions, and amplifies marginalized voices. With a rare ability to connect grassroots communities and policy leaders, she inspires change, champions transparency, and stands as a powerful voice for the voiceless.",
+    bio: "A dynamic leader, humanitarian and advocate for social justice — Founder/CEO of CASNAGGI. Renowned for blending compassion with accountability.",
+    bioFull: [
+      "Comrade Ifeoma Okorie Ikoro is a dynamic leader, humanitarian, and advocate for social justice, serving as Founder and CEO of Care Support for the Needy and Good Governance Initiative (CASNAGGI).",
+      "Renowned for blending compassion with accountability, she has built CASNAGGI into a nationally recognized platform that empowers youth, uplifts women, strengthens institutions, and amplifies marginalized voices. With a rare ability to connect grassroots communities and policy leaders, she inspires change, champions transparency, and stands as a powerful voice for the voiceless—driving a vision of governance rooted in integrity, fairness, and inclusivity.",
+      "Her leadership philosophy is grounded in the belief that true development must combine compassion with accountability. She has championed programs that not only provide immediate relief to the needy but also build the capacity of citizens and public service holders to demand and deliver better governance. Through her efforts, CASNAGGI has become both a humanitarian lifeline and a civic movement that bridges the gap between communities and policymakers.",
+      "Comrade Ikoro is also known for her ability to inspire and mobilize. Her work reflects a rare blend of grassroots connection and policy-level influence, enabling her to engage effectively with both local communities and national stakeholders. Her dedication has earned her recognition as a voice for the voiceless and a role model for women in leadership.",
+      "With a deep sense of purpose and resilience, she continues to steer CASNAGGI toward its vision of a society where the needs of the vulnerable are met and where governance is driven by integrity, fairness, and inclusivity. Her story embodies the power of leadership anchored in service, courage, and the pursuit of justice for all.",
+    ],
   },
   {
     name: "Rev. Fr. Christian Mbara",
     role: "Chairman & Director General",
     photo: MEDIA.team.favour, // placeholder — no photo in PDF
-    bio: "Ordained in 2007, Rev. Fr. Christian Mbara is a dedicated priest of the Catholic Diocese of Okigwe, Nigeria, now serving in the Diocese of Charlottetown, Canada. A native of Nneato, Umunneochi, he studied philosophy and theology at Seat of Wisdom Major Seminary, Owerri, and earned a PGDE from Michael Okpara University. He has held key pastoral roles—Parish Priest, Cathedral Administrator, Rector, Dean—marked by his passion for prayer, preaching, charity, and compassionate care for the sick and needy.",
+    bio: "Catholic priest ordained in 2007, now serving in the Diocese of Charlottetown, Canada. A pastoral leader rooted in service, faith and compassion.",
+    bioFull: [
+      "Ordained in 2007, Rev. Fr. Christian Mbara is a dedicated priest of the Catholic Diocese of Okigwe, Nigeria, now serving in the Diocese of Charlottetown, Canada. A native of Nneato, Umunneochi, he studied philosophy and theology at Seat of Wisdom Major Seminary, Owerri, and earned a PGDE from Michael Okpara University, Umudike.",
+      "Over the years, he has held key pastoral roles — including Parish Priest, Cathedral Administrator, Rector, and Dean — marked by his passion for prayer, preaching, charity, and compassionate care for the sick and needy.",
+      "As Chairman and Director General of CASNAGGI, he provides strategic oversight and chairs board deliberations. He embodies a ministry rooted in service, faith, and pastoral compassion — anchoring the organization's ethical compass and its commitment to the dignity of every human being it serves.",
+    ],
   },
   {
     name: "Dr. Chima Ikoro",
     role: "Director",
     photo: MEDIA.team.favour, // placeholder — no photo in PDF
-    bio: "A seasoned Consultant Gynaecologist at the Federal Medical Centre, Yenagoa, Bayelsa State, and Director of MetrixMed Clinics—a private facility renowned for comprehensive healthcare. MetrixMed offers medicine, obstetrics & gynaecology, paediatrics, family planning, surgery, general practice, laboratory diagnostics and ultrasound scanning. Dr. Ikoro combines clinical expertise with visionary leadership.",
+    bio: "Consultant Gynaecologist at the Federal Medical Centre, Yenagoa, and Director of MetrixMed Clinics — combining clinical expertise with visionary leadership.",
+    bioFull: [
+      "Dr. Chima Ikoro is a seasoned Consultant Gynaecologist at the Federal Medical Centre, Yenagoa, Bayelsa State, and the Director of MetrixMed Clinics — a private facility renowned for comprehensive healthcare.",
+      "Under his leadership, MetrixMed offers a wide range of services including medicine, obstetrics and gynaecology, paediatrics, family planning, surgery, general medical practice, laboratory diagnostics, and ultrasound scanning.",
+      "With a strong commitment to excellence and patient-centered care, Dr. Ikoro combines clinical expertise with visionary leadership, making MetrixMed a trusted hub for quality healthcare in Yenagoa. On the CASNAGGI board, he anchors the organization's Health on Wheels and Hope & Healing initiatives — personally leading maternal health outreaches in the field.",
+    ],
   },
   {
     name: "Mrs. Eucharia Nganya",
     role: "Director",
     photo: MEDIA.team.eucharia,
-    bio: "A retired educationist and humanitarian. Born in 1963 in Ehime Mbano LGA, Imo State, she served meritoriously as Chief Supervisor of Schools with the State Primary Education Board, Owerri, before retiring in 2019. A passionate humanitarian known for her compassion and commitment to service, she channels her energy into initiatives that uplift the needy, empower women and youth, and promote social well-being.",
+    bio: "Retired educationist and humanitarian. Former Chief Supervisor of Schools with the State Primary Education Board, Owerri. A passionate servant of vulnerable communities.",
+    bioFull: [
+      "Lady Eucharia Nganya is a retired educationist, humanitarian, and Board of Trustees member of CASNAGGI. Born in 1963 in Ehime Mbano LGA, Imo State, she served meritoriously as Chief Supervisor of Schools with the State Primary Education Board, Owerri, before retiring in 2019.",
+      "She is married to Sir Dennis Nganya and is blessed with children. Currently based in Owerri, Imo State, Nigeria.",
+      "Mrs. Eucharia Nganya is a passionate humanitarian dedicated to creating meaningful impact in the lives of vulnerable communities. Known for her compassion and commitment to service, she channels her energy into initiatives that uplift the needy, empower women and youth, and promote social well-being.",
+      "With a strong belief in the power of kindness and collective action, she continues to inspire change — embodying leadership rooted in empathy, resilience, and a vision for a more inclusive and compassionate society.",
+    ],
   },
   {
     name: "Mrs. Blessing Chinwe Okorie",
     role: "Director",
     photo: MEDIA.team.ifeoma, // placeholder — no photo in PDF
-    bio: "A seasoned health and administrative professional, currently serving as Senior Administrative Officer at the Bioresources Development Centre (BIODEC), Abagana, Anambra State. She holds a B.Sc. in Health Education from the University of Nigeria, Nsukka (2006), a PGDE in Public Administration (2022), and is pursuing a Master's in Public Administration. A dynamic force in both public health and organizational leadership.",
+    bio: "Senior Administrative Officer at BIODEC, Abagana. Health education specialist and public administration scholar with a passion for service.",
+    bioFull: [
+      "Blessing C. Okorie is a seasoned health and administrative professional, currently serving as Senior Administrative Officer at the Bioresources Development Centre (BIODEC), Abagana, Anambra State.",
+      "With a strong background in health education, she previously worked with the Imo State Ministry of Health in the National Program on Immunization and at Ultimate Home Health Facility.",
+      "She holds a B.Sc. in Health Education from the University of Nigeria, Nsukka (2006), a PGDE in Public Administration (2022), and is presently pursuing a Master's in Public Administration. A dedicated member of NASU Abagana.",
+      "Blessing combines expertise in healthcare and administration with a passion for service, making her a dynamic force in both public health and organizational leadership. On the CASNAGGI board, she anchors our health-linked programs and human resources governance.",
+    ],
   },
 ];
 
