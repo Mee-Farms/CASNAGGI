@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowUpRight, Calendar, MapPin, Tag } from "lucide-react";
+import { ArrowUpRight, Calendar, MapPin } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
 import { EVENTS } from "../data/content";
@@ -53,13 +53,17 @@ const Events = () => {
         <section className="pb-20" data-testid="events-featured">
           <div className="container-x">
             <Reveal>
-              <article className="grid md:grid-cols-12 gap-8 items-center">
+              <Link
+                to={`/events/${featured.slug}`}
+                className="grid md:grid-cols-12 gap-8 items-center group"
+                data-testid="events-featured-link"
+              >
                 <div className="md:col-span-7">
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-brand-sand">
                     <img
                       src={featured.image}
                       alt={featured.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute top-6 left-6 px-4 py-2 rounded-full bg-brand-terracotta text-white text-xs uppercase tracking-[0.2em]">
                       Latest · {featured.dateLabel}
@@ -68,7 +72,7 @@ const Events = () => {
                 </div>
                 <div className="md:col-span-5">
                   <p className="overline">{featured.category}</p>
-                  <h2 className="display-xl mt-4 text-3xl md:text-4xl lg:text-5xl">
+                  <h2 className="display-xl mt-4 text-3xl md:text-4xl lg:text-5xl group-hover:text-brand-terracotta transition-colors">
                     {featured.title}
                   </h2>
                   <div className="mt-6 flex flex-wrap gap-5 text-sm text-brand-mute">
@@ -94,8 +98,11 @@ const Events = () => {
                       </span>
                     ))}
                   </div>
+                  <span className="mt-8 inline-flex items-center gap-2 text-brand-terracotta font-medium">
+                    Read the field report <ArrowUpRight className="h-4 w-4" />
+                  </span>
                 </div>
-              </article>
+              </Link>
             </Reveal>
           </div>
         </section>
@@ -125,7 +132,8 @@ const Events = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {(showFeatured ? filtered.slice(1) : filtered).map((e, i) => (
                 <Reveal key={e.slug} delay={i * 0.05}>
-                  <article
+                  <Link
+                    to={`/events/${e.slug}`}
                     className="card-tactile h-full flex flex-col group"
                     data-testid={`event-${e.slug}`}
                   >
@@ -140,7 +148,7 @@ const Events = () => {
                       </div>
                     </div>
                     <p className="overline">{e.category}</p>
-                    <h3 className="font-display text-xl md:text-2xl mt-3 font-medium leading-snug">
+                    <h3 className="font-display text-xl md:text-2xl mt-3 font-medium leading-snug group-hover:text-brand-terracotta transition-colors">
                       {e.title}
                     </h3>
                     <p className="mt-3 text-brand-ink/70 text-sm leading-relaxed flex-1">
@@ -151,12 +159,11 @@ const Events = () => {
                         <MapPin className="h-3.5 w-3.5" />
                         {e.location}
                       </span>
-                      <span className="flex items-center gap-1">
-                        <Tag className="h-3.5 w-3.5" />
-                        {e.tags[0]}
+                      <span className="flex items-center gap-1 text-brand-terracotta">
+                        Read report <ArrowUpRight className="h-3.5 w-3.5" />
                       </span>
                     </div>
-                  </article>
+                  </Link>
                 </Reveal>
               ))}
             </div>

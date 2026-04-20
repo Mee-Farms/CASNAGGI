@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowUpRight, Quote } from "lucide-react";
+import { ArrowUpRight, Check, Quote, Target } from "lucide-react";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
-import { IMPACT_STATS, MEDIA } from "../data/content";
+import { IMPACT_STATS, MEDIA, STRATEGIC_PLAN, PROJECTED_2035 } from "../data/content";
 
 const STORIES = [
   {
@@ -183,6 +183,136 @@ const Impact = () => {
             <Link to="/donate" className="btn-primary" data-testid="impact-donate-btn">
               Power the next chapter <ArrowUpRight className="h-4 w-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Strategic Plan 2025–2035 */}
+      <section
+        className="py-24 md:py-32 bg-brand-sand/60 border-y border-brand-rule"
+        data-testid="strategic-plan"
+      >
+        <div className="container-x">
+          <div className="grid md:grid-cols-12 gap-8 items-end mb-16">
+            <div className="md:col-span-8">
+              <p className="overline">Strategic Action Plan · 2025–2035</p>
+              <h2 className="display-xl mt-4 text-4xl md:text-5xl lg:text-6xl">
+                A decade, <span className="italic font-light text-brand-terracotta">mapped.</span>
+              </h2>
+              <p className="mt-6 text-brand-ink/70 leading-relaxed max-w-2xl">
+                CASNAGGI's 10-year roadmap — from foundation to nationwide scale.
+                Three phases, five strategic goals, one Nigeria.
+              </p>
+            </div>
+            <div className="md:col-span-4 md:text-right text-xs uppercase tracking-[0.22em] text-brand-mute">
+              Mid-term eval 2030 · Final eval 2035
+            </div>
+          </div>
+
+          <div className="relative">
+            {/* connecting line */}
+            <div className="hidden md:block absolute top-8 left-[8%] right-[8%] h-px bg-brand-rule" />
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 relative">
+              {STRATEGIC_PLAN.map((phase, i) => (
+                <Reveal
+                  key={phase.phase}
+                  delay={i * 0.1}
+                  className="relative"
+                  data-testid={`strategic-phase-${i}`}
+                >
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="h-16 w-16 rounded-full bg-brand-terracotta text-white flex items-center justify-center font-display text-lg font-semibold relative z-10">
+                      0{i + 1}
+                    </div>
+                    <div>
+                      <div className="overline">{phase.phase}</div>
+                      <div className="font-display text-2xl font-medium mt-1">
+                        {phase.label}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="card-tactile">
+                    <ul className="space-y-4">
+                      {phase.goals.map((g, idx) => (
+                        <li
+                          key={idx}
+                          className="flex gap-3 text-brand-ink/80 text-sm leading-relaxed"
+                        >
+                          <Check className="h-5 w-5 text-brand-terracotta flex-shrink-0 mt-0.5" />
+                          <span>{g}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projected 2035 — big number block */}
+      <section
+        className="relative py-24 md:py-32 bg-brand-terracotta text-white overflow-hidden"
+        data-testid="projected-2035"
+      >
+        <div className="container-x relative">
+          <div className="grid md:grid-cols-12 gap-10 items-start">
+            <div className="md:col-span-5 md:sticky md:top-28 md:self-start">
+              <p className="overline text-white/80">By 2035</p>
+              <h2 className="display-xl mt-4 text-4xl md:text-5xl lg:text-6xl text-white">
+                Where we're<br />
+                <span className="italic font-light">headed.</span>
+              </h2>
+              <p className="mt-6 text-white/85 max-w-sm leading-relaxed">
+                Our 10-year impact ambitions — the targets we are publicly
+                committing to, so our donors, partners and communities can hold
+                us accountable.
+              </p>
+            </div>
+
+            <div className="md:col-span-7">
+              <ul className="divide-y divide-white/15">
+                {PROJECTED_2035.map((t, i) => (
+                  <Reveal
+                    key={i}
+                    delay={i * 0.06}
+                    as="li"
+                    className="py-6 flex items-start gap-6"
+                    data-testid={`projected-${i}`}
+                  >
+                    <span className="font-mono text-sm text-white/60 pt-1 flex-shrink-0">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <div className="flex-1 flex items-start justify-between gap-4">
+                      <span className="font-display text-xl md:text-2xl leading-snug">
+                        {t}
+                      </span>
+                      <Target className="h-6 w-6 text-white/60 flex-shrink-0 mt-1" />
+                    </div>
+                  </Reveal>
+                ))}
+              </ul>
+
+              <div className="mt-10 flex flex-wrap gap-4">
+                <Link
+                  to="/donate"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-brand-terracotta font-medium hover:bg-brand-ink hover:text-white transition-all duration-300"
+                  data-testid="projected-donate-btn"
+                >
+                  Fund the roadmap <ArrowUpRight className="h-4 w-4" />
+                </Link>
+                <Link
+                  to="/get-involved"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-white/40 text-white font-medium hover:bg-white/10 transition-all duration-300"
+                  data-testid="projected-partner-btn"
+                >
+                  Partner with us
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

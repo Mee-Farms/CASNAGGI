@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Programs from "./pages/Programs";
 import Events from "./pages/Events";
+import EventDetail from "./pages/EventDetail";
 import Impact from "./pages/Impact";
 import GetInvolved from "./pages/GetInvolved";
 import Donate from "./pages/Donate";
@@ -23,6 +24,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/programs" element={<Programs />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/events/:slug" element={<EventDetail />} />
             <Route path="/impact" element={<Impact />} />
             <Route path="/get-involved" element={<GetInvolved />} />
             <Route path="/donate" element={<Donate />} />
