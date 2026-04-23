@@ -8,7 +8,7 @@ export const ORG = {
   registrar: "Corporate Affairs Commission (CAC)",
   address: "49 Customs Road, Bayelsa State, Nigeria",
   phone: "+234 916 796 1355",
-  email: "caresupportfortheneedy.com",
+  email: "makeawish@caresupportfortheneedy.com",
   website: "www.caresupportfortheneedy.com",
   socials: [
     { label: "Facebook", href: "#" },
