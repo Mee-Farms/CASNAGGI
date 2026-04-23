@@ -8,8 +8,8 @@ export const ORG = {
   registrar: "Corporate Affairs Commission (CAC)",
   address: "49 Customs Road, Bayelsa State, Nigeria",
   phone: "+234 916 796 1355",
-  email: "casnaggi@gmail.com",
-  website: "www.csnagginigeria.org",
+  email: "caresupportfortheneedy.com",
+  website: "www.caresupportfortheneedy.com",
   socials: [
     { label: "Facebook", href: "#" },
     { label: "Twitter", href: "#" },
