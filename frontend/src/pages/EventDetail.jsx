@@ -38,6 +38,13 @@ const EventDetail = () => {
 
   return (
     <>
+      <Seo
+        title={event.title}
+        description={event.excerpt}
+        path={`/events/${event.slug}`}
+        image={event.image}
+        type="article"
+      />
       {/* ---------- HERO ---------- */}
       <section
         className="relative min-h-[75vh] flex items-end overflow-hidden bg-brand-ink"
