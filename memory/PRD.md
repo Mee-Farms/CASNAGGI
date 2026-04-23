@@ -61,7 +61,7 @@ User provided official organization PDF and asked for:
 ### Iteration 4 (SEO + Expandable Trustees) — 20 Apr 2026
 - [x] **Per-page SEO** via `react-helmet-async`: `<Seo>` component sets `<title>`, description, keywords, canonical, Open Graph (type/site_name/title/description/url/image/locale=en_NG), Twitter Card (summary_large_image), theme-color (#E05A47) — added to all 9 pages
 - [x] Event detail pages get event-specific title, excerpt, canonical, `og:type=article`, and event image as `og:image` for rich social unfurls
-- [x] `public/index.html` default title replaced (no more "Emergent | Fullstack App"); duplicate meta[description] removed to keep DOM clean
+- [x] `public/index.html` default title replaced; duplicate meta[description] removed to keep DOM clean
 - [x] **Expandable trustee cards** on About via new `<TrusteeCard>` component: short bio preview + "Read more" toggle that animates (framer-motion height + opacity) into full multi-paragraph `bioFull`; chevron rotates; `aria-expanded` flips; each card toggles independently
 - [x] Trustee data enriched with `bioFull` (multi-paragraph) — Comrade Ifeoma has 5 paragraphs; all 5 trustees have 3-5 paragraph long-form bios preserving PDF content verbatim
 - [x] Testing agent: 100% pass after fix (1 issue found on initial run — missing Seo render in EventDetail — fixed immediately)

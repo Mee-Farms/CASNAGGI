@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 
 const SITE_NAME = "CASNAGGI — Care Support for the Needy & Good Governance Initiative";
-const SITE_BASE = "https://charity-redesign-2.preview.emergentagent.com";
+const SITE_BASE = ""; // TODO: Set to your production domain
 const DEFAULT_OG_IMAGE =
   "https://images.pexels.com/photos/28702872/pexels-photo-28702872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1400";
 
