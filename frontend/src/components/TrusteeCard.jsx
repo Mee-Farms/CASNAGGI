@@ -94,7 +94,7 @@ const TrusteeCard = ({ trustee, index, variant = "small" }) => {
           <img
             src={trustee.photo}
             alt={trustee.name}
-            className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700"
+            className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-ink via-brand-ink/10 to-transparent" />
         </div>

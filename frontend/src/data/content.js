@@ -22,6 +22,7 @@ export const LOGO_URL =
   "https://caresupportfortheneedy.com/wp-content/uploads/2025/12/Cradling-Love-in-Soft-Colors.png";
 
 export const MEDIA = {
+  placeholder: "https://caresupportfortheneedy.com/wp-content/uploads/2026/04/placeholder.png",
   heroHome:
     "https://images.pexels.com/photos/28702872/pexels-photo-28702872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1400",
   unveiling:
@@ -55,9 +56,15 @@ export const MEDIA = {
     "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1400&q=80",
   team: {
     ifeoma:
-      "https://caresupportfortheneedy.com/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-11-at-22.21.27_27d8e097-e1765561153698-300x300.jpg",
+      "https://caresupportfortheneedy.com/wp-content/uploads/2026/04/CEO.png",
     eucharia:
       "https://caresupportfortheneedy.com/wp-content/uploads/2025/12/Lady-Nganya-300x300.jpg",
+    chima:
+      "https://caresupportfortheneedy.com/wp-content/uploads/2026/04/Dr.-Chima.png",
+    mbara:
+      "https://caresupportfortheneedy.com/wp-content/uploads/2026/04/Rev-214x300.png",
+    blessing:
+      "https://caresupportfortheneedy.com/wp-content/uploads/2026/04/7e30e875-51ef-43ad-b091-99670aed91c5-scaled.jpg",
     favour:
       "https://caresupportfortheneedy.com/wp-content/uploads/2025/12/Favour-300x300.jpg",
   },
@@ -226,7 +233,7 @@ export const TRUSTEES = [
   {
     name: "Rev. Fr. Christian Mbara",
     role: "Chairman & Director General",
-    photo: MEDIA.team.favour, // placeholder — no photo in PDF
+    photo: MEDIA.team.mbara,
     bio: "Catholic priest ordained in 2007, now serving in the Diocese of Charlottetown, Canada. A pastoral leader rooted in service, faith and compassion.",
     bioFull: [
       "Ordained in 2007, Rev. Fr. Christian Mbara is a dedicated priest of the Catholic Diocese of Okigwe, Nigeria, now serving in the Diocese of Charlottetown, Canada. A native of Nneato, Umunneochi, he studied philosophy and theology at Seat of Wisdom Major Seminary, Owerri, and earned a PGDE from Michael Okpara University, Umudike.",
@@ -235,9 +242,21 @@ export const TRUSTEES = [
     ],
   },
   {
+    name: "Engr. Favour Chigemezu Iwuchukwu",
+    role: "National Coordinator",
+    photo: MEDIA.team.favour,
+    bio: "A visionary leader and programme manager with extensive experience in development, governance, and community empowerment. As National Coordinator, he oversees strategy, projects, and impact across all programme pillars, ensuring alignment with CASNAGGI’s mission of integrating humanitarian service with good governance.",
+    bioFull: [
+      "Engineer Favour Iwuchukwu is a purpose-driven leader, development advocate, and seasoned entrepreneur committed to advancing community impact and good governance in Nigeria. Hailing from Imo State, he holds a Higher National Diploma (HND) in Chemical Engineering from the Institute of Management and Technology (IMT), Enugu, where he built a strong technical foundation that complements his strategic leadership abilitiesAs the National Coordinator of the Care Support for the Needy and Good Governance Initiative (CASNAGGI), Engineer Favour Iwuchukwu champions initiatives that uplift vulnerable populations while fostering accountability, transparency, and citizen engagement in governance. His leadership reflects a deep passion for social equity and sustainable development.",
+      "Beyond his national role, he serves as a Trustee on the Board of the International Standard Center for Development, where he contributes to shaping impactful development programs on a broader scale. His influence spans both grassroots mobilization and institutional development.",
+      "A forward-thinking entrepreneur, he is the Director of Favour Food Grains Enterprise, where he merges innovation with social responsibility, using business as a tool for economic empowerment and community transformation.",
+      "Engineer Favour Iwuchukwu stands at the intersection of engineering, leadership, and humanitarian service—dedicated to building a more inclusive and accountable society.",
+    ],
+  },
+  {
     name: "Dr. Chima Ikoro",
     role: "Director",
-    photo: MEDIA.team.favour, // placeholder — no photo in PDF
+    photo: MEDIA.team.chima,
     bio: "Consultant Gynaecologist at the Federal Medical Centre, Yenagoa, and Director of MetrixMed Clinics — combining clinical expertise with visionary leadership.",
     bioFull: [
       "Dr. Chima Ikoro is a seasoned Consultant Gynaecologist at the Federal Medical Centre, Yenagoa, Bayelsa State, and the Director of MetrixMed Clinics — a private facility renowned for comprehensive healthcare.",
@@ -260,7 +279,7 @@ export const TRUSTEES = [
   {
     name: "Mrs. Blessing Chinwe Okorie",
     role: "Director",
-    photo: MEDIA.team.ifeoma, // placeholder — no photo in PDF
+    photo: MEDIA.team.blessing,
     bio: "Senior Administrative Officer at BIODEC, Abagana. Health education specialist and public administration scholar with a passion for service.",
     bioFull: [
       "Blessing C. Okorie is a seasoned health and administrative professional, currently serving as Senior Administrative Officer at the Bioresources Development Centre (BIODEC), Abagana, Anambra State.",
