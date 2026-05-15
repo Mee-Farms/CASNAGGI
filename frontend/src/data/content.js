@@ -292,13 +292,13 @@ export const TRUSTEES = [
     ],
   },
   {
-    name: "Mr. Bagudu S. Ezekiel",
+    name: "Dr. Bagudu S. Ezekiel",
     role: "Director of Programs",
     photo: MEDIA.team.bagudu,
     bio: "A development professional with over a decade of experience in humanitarian and community development work. Leads program design, implementation, and monitoring across West Africa.",
     bioFull: [
-      "Mr. Bagudu S. Ezekiel is a development professional with over a decade of experience in humanitarian and community development work. He currently serves as Director of Programs at CASNAGGI, where he leads the design, implementation, and monitoring of all field programs.",
-      "With a strong background in project management and stakeholder engagement, Bagudu has successfully managed complex humanitarian initiatives across Nigeria, Cameroon, and Niger.",
+      "Mr. Bagudu S. Ezekiel is a development professional with over a decade of experience in humanitarian and community development work. He currently serves as Director of Programs at CASNAGGI, where he is responsible for shaping and monitoring impactful initiatives that empower communities and advance good governance.",
+      "Reporting to the National Coordinator, he ensures programs align with CASNAGGI's mission,  bridging grassroots needs with policy advocacy to deliver lasting change.",
     ],
   },
 ];
