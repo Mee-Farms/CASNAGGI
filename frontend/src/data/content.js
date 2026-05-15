@@ -54,7 +54,7 @@ export const MEDIA = {
   workshop:
     "https://images.pexels.com/photos/8761744/pexels-photo-8761744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1400",
   food:
-    "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1400&q=80",
+    "https://caresupportfortheneedy.com/wp-content/uploads/2026/02/IMG-20260116-WA0171.jpg.jpeg",
   team: {
     ifeoma:
       "https://caresupportfortheneedy.com/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-11-at-22.21.27_27d8e097-e1765561153698.jpg",

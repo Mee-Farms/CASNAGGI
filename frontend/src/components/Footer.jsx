@@ -90,6 +90,10 @@ const Footer = () => {
                 <span>{ORG.address}</span>
               </li>
               <li className="flex items-start gap-3">
+                <MapPin className="h-4 w-4 mt-1 text-brand-terracotta" />
+                <span>{ORG.branches}</span>
+              </li>
+              <li className="flex items-start gap-3">
                 <Phone className="h-4 w-4 mt-1 text-brand-terracotta" />
                 <a href={`tel:${ORG.phone}`} className="hover:text-white" data-testid="footer-phone">
                   {ORG.phone}
