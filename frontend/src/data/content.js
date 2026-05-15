@@ -11,10 +11,10 @@ export const ORG = {
   email: "makeawish@caresupportfortheneedy.com",
   website: "www.caresupportfortheneedy.com",
   socials: [
-    { label: "Facebook", href: "#" },
-    { label: "Twitter", href: "#" },
-    { label: "Instagram", href: "#" },
-    { label: "Youtube", href: "#" },
+    { label: "Facebook", href: "https://web.facebook.com/casnaggi" },
+    { label: "Twitter", href: "https://twitter.com/casnaggi" },
+    { label: "Instagram", href: "https://instagram.com/casnaggi" },
+    { label: "Youtube", href: "https://youtube.com/casnaggi" },
   ],
 };
 
@@ -31,7 +31,7 @@ export const MEDIA = {
     "https://caresupportfortheneedy.com/wp-content/uploads/2025/07/program.jpg",
   thumb: "https://caresupportfortheneedy.com/wp-content/uploads/2025/07/thumb-1.jpg",
   humanitarian:
-    "https://images.pexels.com/photos/6646875/pexels-photo-6646875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1400",
+    "https://caresupportfortheneedy.com/wp-content/uploads/2026/02/IMG-20260116-WA0076.jpg.jpeg",
   youth:
     "https://images.unsplash.com/photo-1649486116205-71c92cf5160f?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85&w=1400",
   women:
