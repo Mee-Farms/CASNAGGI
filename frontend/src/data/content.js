@@ -7,8 +7,9 @@ export const ORG = {
   rc: "RC: 8722526",
   registrar: "Corporate Affairs Commission (CAC)",
   address: "49 Customs Road, Bayelsa State, Nigeria",
-  phone: "+234 916 796 1355",
-  email: "makeawish@caresupportfortheneedy.com",
+  branches: "Suit 1B First Floor Bowl Jolly Nyame Stadium Yola Road Jalingo, Taraba State",
+  phone: "+234 916 796 1355 | +234 813 741 5326",
+  email: "casnaggi@gmail.com | makeawish@caresupportfortheneedy.com",
   website: "www.caresupportfortheneedy.com",
   socials: [
     { label: "Facebook", href: "https://web.facebook.com/casnaggi" },
@@ -56,7 +57,7 @@ export const MEDIA = {
     "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1400&q=80",
   team: {
     ifeoma:
-      "https://caresupportfortheneedy.com/wp-content/uploads/2026/04/CEO.png",
+      "https://caresupportfortheneedy.com/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-11-at-22.21.27_27d8e097-e1765561153698.jpg",
     eucharia:
       "https://caresupportfortheneedy.com/wp-content/uploads/2025/12/Lady-Nganya-300x300.jpg",
     chima:
@@ -64,9 +65,11 @@ export const MEDIA = {
     mbara:
       "https://caresupportfortheneedy.com/wp-content/uploads/2026/04/Rev-214x300.png",
     blessing:
-      "https://caresupportfortheneedy.com/wp-content/uploads/2026/04/7e30e875-51ef-43ad-b091-99670aed91c5-scaled.jpg",
+      "https://caresupportfortheneedy.com/wp-content/uploads/2026/04/CEO.png",
     favour:
       "https://caresupportfortheneedy.com/wp-content/uploads/2025/12/Favour-300x300.jpg",
+    bagudu:
+      "https://caresupportfortheneedy.com/wp-content/uploads/2026/02/IMG-20260116-WA0096.jpg.jpeg",
   },
   programImages: {
     humanitarian:
@@ -128,7 +131,7 @@ export const CORE_VALUES = [
   { title: "Collaboration", body: "Partnering with stakeholders, communities, and institutions for collective impact." },
 ];
 
-// 7 thematic areas with named sub-programs (per PDF)
+// 7 thematic areas with named sub-programs
 export const PROGRAMS = [
   {
     slug: "humanitarian-care",
@@ -231,17 +234,6 @@ export const TRUSTEES = [
     ],
   },
   {
-    name: "Rev. Fr. Christian Mbara",
-    role: "Chairman & Director General",
-    photo: MEDIA.team.mbara,
-    bio: "Catholic priest ordained in 2007, now serving in the Diocese of Charlottetown, Canada. A pastoral leader rooted in service, faith and compassion.",
-    bioFull: [
-      "Ordained in 2007, Rev. Fr. Christian Mbara is a dedicated priest of the Catholic Diocese of Okigwe, Nigeria, now serving in the Diocese of Charlottetown, Canada. A native of Nneato, Umunneochi, he studied philosophy and theology at Seat of Wisdom Major Seminary, Owerri, and earned a PGDE from Michael Okpara University, Umudike.",
-      "Over the years, he has held key pastoral roles — including Parish Priest, Cathedral Administrator, Rector, and Dean — marked by his passion for prayer, preaching, charity, and compassionate care for the sick and needy.",
-      "As Chairman and Director General of CASNAGGI, he provides strategic oversight and chairs board deliberations. He embodies a ministry rooted in service, faith, and pastoral compassion — anchoring the organization's ethical compass and its commitment to the dignity of every human being it serves.",
-    ],
-  },
-  {
     name: "Engr. Favour Chigemezu Iwuchukwu",
     role: "National Coordinator",
     photo: MEDIA.team.favour,
@@ -251,6 +243,17 @@ export const TRUSTEES = [
       "Beyond his national role, he serves as a Trustee on the Board of the International Standard Center for Development, where he contributes to shaping impactful development programs on a broader scale. His influence spans both grassroots mobilization and institutional development.",
       "A forward-thinking entrepreneur, he is the Director of Favour Food Grains Enterprise, where he merges innovation with social responsibility, using business as a tool for economic empowerment and community transformation.",
       "Engineer Favour Iwuchukwu stands at the intersection of engineering, leadership, and humanitarian service—dedicated to building a more inclusive and accountable society.",
+    ],
+  },
+  {
+    name: "Rev. Fr. Christian Mbara",
+    role: "Chairman & Director General",
+    photo: MEDIA.team.mbara,
+    bio: "Catholic priest ordained in 2007, now serving in the Diocese of Charlottetown, Canada. A pastoral leader rooted in service, faith and compassion.",
+    bioFull: [
+      "Ordained in 2007, Rev. Fr. Christian Mbara is a dedicated priest of the Catholic Diocese of Okigwe, Nigeria, now serving in the Diocese of Charlottetown, Canada. A native of Nneato, Umunneochi, he studied philosophy and theology at Seat of Wisdom Major Seminary, Owerri, and earned a PGDE from Michael Okpara University, Umudike.",
+      "Over the years, he has held key pastoral roles — including Parish Priest, Cathedral Administrator, Rector, and Dean — marked by his passion for prayer, preaching, charity, and compassionate care for the sick and needy.",
+      "As Chairman and Director General of CASNAGGI, he provides strategic oversight and chairs board deliberations. He embodies a ministry rooted in service, faith, and pastoral compassion — anchoring the organization's ethical compass and its commitment to the dignity of every human being it serves.",
     ],
   },
   {
@@ -286,6 +289,16 @@ export const TRUSTEES = [
       "With a strong background in health education, she previously worked with the Imo State Ministry of Health in the National Program on Immunization and at Ultimate Home Health Facility.",
       "She holds a B.Sc. in Health Education from the University of Nigeria, Nsukka (2006), a PGDE in Public Administration (2022), and is presently pursuing a Master's in Public Administration. A dedicated member of NASU Abagana.",
       "Blessing combines expertise in healthcare and administration with a passion for service, making her a dynamic force in both public health and organizational leadership. On the CASNAGGI board, she anchors our health-linked programs and human resources governance.",
+    ],
+  },
+  {
+    name: "Mr. Bagudu S. Ezekiel",
+    role: "Director of Programs",
+    photo: MEDIA.team.bagudu,
+    bio: "A development professional with over a decade of experience in humanitarian and community development work. Leads program design, implementation, and monitoring across West Africa.",
+    bioFull: [
+      "Mr. Bagudu S. Ezekiel is a development professional with over a decade of experience in humanitarian and community development work. He currently serves as Director of Programs at CASNAGGI, where he leads the design, implementation, and monitoring of all field programs.",
+      "With a strong background in project management and stakeholder engagement, Bagudu has successfully managed complex humanitarian initiatives across Nigeria, Cameroon, and Niger.",
     ],
   },
 ];
